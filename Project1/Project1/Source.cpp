@@ -1,9 +1,42 @@
 #include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main() {
-	int n;
+
+	// Calculator
+	char input;
+	int a, b;
+	cout << "Enter '+' or '-' or '*' or '/'\n";
+	cout << "I want to use: ";
+	cin >> input;
+
+	cout << "\nEnter your first number: ";
+	cin >> a;
+	cout << "Enter your second number: ";
+	cin >> b;
+
+	if (input == '+') {
+		cout << a << " + " << b << " = " << a + b;
+	}
+	else if (input == '-') {
+		cout << a << " - " << b << " = " << a - b;
+	}
+	else if (input == '*') {
+		cout << a << " * " << b << " = " << a * b;
+	}
+	else if (input == '/') {
+		cout << a << " / " << b << " = " << a / b;
+	}
+	else {
+		cout << "I don't know what to do...";
+	}
+
+	// For loops
+	/*int n;
 	cout << "Enter a number: ";
 	cin >> n;
 	int maxN = n;
@@ -26,9 +59,7 @@ int main() {
 	}
 	for (; m <= maxM; ++m) {
 		cout << m << " ";
-	}
+	}*/
 
 	return 0;
-	// test
-	// this is a change and another commit
 }
